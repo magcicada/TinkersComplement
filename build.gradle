@@ -64,7 +64,7 @@ repositories {
     }
     maven {
         name = 'CTM artifacts'
-        url = 'https://mvnrepository.com/artifact/team.chisel.ctm/CTM/'
+        url = 'https://modmaven.dev/'
     }
 }
 
