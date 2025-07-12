@@ -62,14 +62,19 @@ repositories {
         name = 'CurseForge'
         url = 'https://minecraft.curseforge.com/api/maven/'
     }
+    maven {
+        name = 'CTM artifacts'
+        url = 'https://mvnrepository.com/artifact/team.chisel.ctm/CTM/'
+    }
 }
 
 dependencies {
     deobfCompile "mezz.jei:jei_${config.minecraft_version}:${config.jei_version}"
     deobfCompile "slimeknights.mantle:Mantle:${config.minecraft_base_version}-${config.mantle_version}"
     deobfCompile "slimeknights:TConstruct:${config.minecraft_version}-${config.tinkers_version}"
-    deobfCompile "team.chisel.ctm:CTM:MC${config.minecraft_version}-${config.ctm_version}"
-    deobfCompile "team.chisel:Chisel:MC${config.minecraft_version}-${config.chisel_version}"
+    deobfCompile "team.chisel.ctm:CTM:MC1.12.2-1.0.2.31"
+    //deobfCompile "team.chisel.ctm:CTM:MC${config.minecraft_version}-${config.ctm_version}"
+    //deobfCompile "team.chisel:Chisel:MC${config.minecraft_version}-${config.chisel_version}"
     // deobfCompile "team.chisel:Chisel:MC${config.minecraft_version}-${config.chisel_version}:api"
     deobfCompile("exnihilocreatio:exnihilocreatio:${config.minecraft_base_version}-${config.exnihilo_version}") {
 		transitive = false
